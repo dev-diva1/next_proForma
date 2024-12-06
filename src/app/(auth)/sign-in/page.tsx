@@ -43,7 +43,7 @@ const SignInPage = () => {
           </Button>
         </CardContent>
         <CardFooter className="font-sans flex gap-1">
-          <p>Don't have an account?</p>
+          <p>Don&apos;t have an account?</p>
           <Link
             href={"/sign-up"}
             className="text-blue-600 hover:opacity-85 transition-opacity "
