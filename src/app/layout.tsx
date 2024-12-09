@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "@/assets/css/globals.css";
 import { Inter, Roboto } from "next/font/google";
-
+import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const roboto = Roboto({
   subsets: ["latin"],
@@ -23,6 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} ${roboto.variable} bg-stone-50`}>
         {children}
+        <Toaster />
       </body>
     </html>
   );
